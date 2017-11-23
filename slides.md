@@ -38,13 +38,13 @@ https://rustup.rs/
 
 - Available for Windows, GNU/Linux, Mac
 - Support for X86, X86-64 & ARM<!-- .element: class="fragment" -->
-- Rust 1.20.0 (stable)<!-- .element: class="fragment" -->
+- Rust 1.22.1 (stable)<!-- .element: class="fragment" -->
 
 ***
 
 ```
   $ rustc --version
-  rustc 1.20.0 (f3d6973f4 2017-08-27)
+  rustc 1.22.1 (05e2e1c41 2017-11-22)
 ```
 
 ---
@@ -254,9 +254,9 @@ rustup override set nightly
 
 ```
   fn main() {
-      const a: i32 = 7;
-      const b: i32 = 8;
-      print!("The sum is: {}", a + b);
+      const A: i32 = 7;
+      const B: i32 = 8;
+      print!("The sum is: {}", A + B);
   }
 ```
 
