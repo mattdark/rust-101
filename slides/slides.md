@@ -2,7 +2,7 @@
 <!-- .element: style="margin-top: -5%;" -->
 ## Rust 101
 
-#### [Mario Garcia](http://mariog.xyz) · [@mariogmd](https://twitter.com/mariogmd)
+#### [Mario Garcia](https://mattdark.github.io) · [@mariogmd](https://twitter.com/mariogmd)
 
 ---
 
@@ -38,13 +38,13 @@ https://rustup.rs/
 
 - Available for Windows, GNU/Linux, Mac
 - Support for X86, X86-64 & ARM<!-- .element: class="fragment" -->
-- Rust 1.22.1 (stable)<!-- .element: class="fragment" -->
+- Rust 1.25.0 (stable)<!-- .element: class="fragment" -->
 
 ----
 
 ```
   $ rustc --version
-  rustc 1.22.1 (05e2e1c41 2017-11-22)
+  rustc 1.25.0 (84203cac6 2018-03-25)
 ```
 
 ---
@@ -335,45 +335,6 @@ rustup override set nightly
 
 ---
 
-## functions
-
-```
-  fn name(arg: Type) -> ReturnType {
-      statements;
-  }
-```
-
----
-
-## Example
-
-```
-  fn main () {
-      let a = 9;
-      let b = 15;
-      sum(a, b);
-  }
-  fn sum(a: i32, b: i32) {
-      let c = a + b;
-      println("The sum of {} + {} is: {}", a, b, c;
-  }
-```
-
-----
-
-```
-  fn five() -> i32 {
-      5
-  }
-
-  fn main() {
-      let x = five();
-      println!("The value of x is: {}", x);
-  }
-```
-
----
-
 ## Decision making
 
 ```
@@ -510,6 +471,45 @@ rustup override set nightly
           println!("{}", a[i]);
           i = i +1;
       }
+  }
+```
+
+---
+
+## functions
+
+```
+  fn name(arg: Type) -> ReturnType {
+      statements;
+  }
+```
+
+---
+
+## Example
+
+```
+  fn main () {
+      let a = 9;
+      let b = 15;
+      sum(a, b);
+  }
+  fn sum(a: i32, b: i32) {
+      let c = a + b;
+      println("The sum of {} + {} is: {}", a, b, c;
+  }
+```
+
+----
+
+```
+  fn five() -> i32 {
+      5
+  }
+
+  fn main() {
+      let x = five();
+      println!("The value of x is: {}", x);
   }
 ```
 
