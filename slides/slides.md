@@ -318,23 +318,6 @@ rustup override set nightly
 
 ---
 
-### Tuples
-
-```
-  let tup: (i32, f64, u8) = (500, 6.4, 1);
-```
-
----
-
-## Arrays
-
-```
-  let a = [1, 2, 3]; // a: [i32; 3]
-  let mut m = [1, 2, 3]; // m: [i32; 3]
-```
-
----
-
 ## Decision making
 
 ```
@@ -383,6 +366,23 @@ rustup override set nightly
           println!("number is not divisible by 4, 3, or 2");
       }
   }
+```
+
+---
+
+### Tuples
+
+```
+  let tup: (i32, f64, u8) = (500, 6.4, 1);
+```
+
+---
+
+## Arrays
+
+```
+  let a = [1, 2, 3]; // a: [i32; 3]
+  let mut m = [1, 2, 3]; // m: [i32; 3]
 ```
 
 ---
