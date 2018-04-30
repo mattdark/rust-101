@@ -130,7 +130,7 @@ rustup override set nightly
 ## New project with Cargo
 
 ```
-  $ cargo new hello_world --bin
+  $ cargo new hello_world
 ```
 
 ----
@@ -247,7 +247,7 @@ rustup override set nightly
 ----
 
 ```
-  const name: type = expression;
+  const NAME: type = expression;
 ```
 
 ----
@@ -445,8 +445,9 @@ rustup override set nightly
 
 ```
   fn main() {
-      for number in (1..4).rev() {
-          println!("{}!", number);
+      let a = [1, 2, 3, 4, 5];
+      for n in (0..5).rev() {
+          println!("{}", a[n]);
       }
   }
 ```
