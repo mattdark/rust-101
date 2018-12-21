@@ -2,7 +2,7 @@
 <!-- .element: style="margin-top: -5%;" -->
 ## Rust 101
 
-#### [Mario Garcia](https://mattdark.github.io) · [@mariogmd](https://twitter.com/mariogmd)
+#### [Mario Garcia](https://mariog.xyz) · [@mariogmd](https://twitter.com/mariogmd)
 
 ---
 
@@ -18,9 +18,17 @@
 
 <!-- .element: class="fragment" -->
 
+----
+
+## Characteristics
+
+- Compiled language
+- Support for multiple OSs and hardware architectures<!-- .element: class="fragment" -->
+- Integration with other languages<!-- .element: class="fragment" -->
+
 ---
 
-## Installing Rust
+## Installation
 
 ### Linux or Mac:
 
@@ -30,22 +38,13 @@
 
 ----
 
-### Windows
+### Other OSs
 
-https://rustup.rs/
+Download from https://rustup.rs/
 
-----
+---
 
-- Available for Windows, GNU/Linux, Mac
-- Support for X86, X86-64 & ARM<!-- .element: class="fragment" -->
-- Rust 1.25.0 (stable)<!-- .element: class="fragment" -->
-
-----
-
-```
-  $ rustc --version
-  rustc 1.25.0 (84203cac6 2018-03-25)
-```
+## Tools
 
 ---
 
@@ -53,7 +52,15 @@ https://rustup.rs/
 
 ----
 
-### Commands
+###  rustup is an installer for the systems programming language Rust 
+
+----
+
+### Versions of Rust
+
+- Stable (1.31.1)
+- Beta<!-- .element: class="fragment" -->
+- Nightly<!-- .element: class="fragment" -->
 
 ----
 
@@ -89,7 +96,7 @@ rustup override set nightly
 
 ---
 
-## Hello, World!
+## rustc
 
 ----
 
@@ -117,10 +124,6 @@ rustup override set nightly
 
 ## Cargo
 
----
-
-## What is Cargo?
-
 ----
 
 ### Cargo is Rust’s build system and package manager.
@@ -136,22 +139,13 @@ rustup override set nightly
 ----
 
 ```
-  ~/hello_world$ ls -R 
-```
-
-----
-
-```
-  .:
-  Cargo.toml src
-
-  ./src:
-  main.rs
+  ~/hello_world$ ls -a
+  Cargo.toml src .git .gitignore
 ```
 
 ---
 
-## Manifest
+## Cargo.toml
 
 ```
   [package]
@@ -164,10 +158,20 @@ rustup override set nightly
 
 ---
 
+## src/main.rs
+
+```
+  fn main() {
+      println!("Hello, world!");
+  }
+```
+
+---
+
 ## Build & Run
 
 ```
-  $ cargo build
+  $ cargo build #Optional
   $ cargo run
 ```
 
@@ -219,7 +223,27 @@ rustup override set nightly
   }
 ```
 
+---
+
+## Constants
+
+```
+  const NAME: type = expression;
+```
+
 ----
+
+## Example
+
+```
+  fn main() {
+      const A: i32 = 7;
+      const B: i32 = 8;
+      print!("The sum is: {}", A + B);
+  }
+```
+
+---
 
 ## Mutability
 
@@ -240,23 +264,14 @@ rustup override set nightly
   let mut nombre = expression;
 ```
 
----
-
-## Constants
-
-----
-
-```
-  const NAME: type = expression;
-```
-
 ----
 
 ```
   fn main() {
-      const A: i32 = 7;
-      const B: i32 = 8;
-      print!("The sum is: {}", A + B);
+      let mut x = 5;
+      println!("The value of x is: {}", x);
+      x = 6;
+      println!("The value of x is: {}", x);
   }
 ```
 
@@ -301,10 +316,10 @@ rustup override set nightly
 
 ---
 
-## String
+## Char
 
 ```
-  let x = 'x';
+  let x: char = 'x';
 ```
 
 ---
