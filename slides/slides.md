@@ -177,7 +177,7 @@ rustup override set nightly
 
 ---
 
-## Rust Sintax
+## Rust Syntax
 
 ---
 
